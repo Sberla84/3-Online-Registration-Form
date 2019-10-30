@@ -100,7 +100,7 @@ input[type=tel] {
    font-size: 1em;
    padding: 20px 25px;
    border: none;
-   background-color: #e8eeef;
+   background-color: #e0eaeb;
    border-radius: 5px;
    box-sizing: border-box;
    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -114,7 +114,7 @@ input[type=tel] {
   font-size: 1em;
   padding: 20px 25px;
   border: none;
-  background-color: #e8eeef;
+  background-color: #e0eaeb;
   border-radius: 5px;
   box-sizing: border-box;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -177,6 +177,11 @@ input[type=tel] {
   text-align: right;
   font-style: italic;
   color: #b5c0c9;
+}
+
+input,
+textarea {
+transition: background-color 2s;
 }
 
 input:focus,
