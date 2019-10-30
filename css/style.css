@@ -21,9 +21,13 @@
   }
 
   legend {
+    width:100%;
+    border-top: 2px solid #2d3945;
     font-size: 1.5em;
     font-weight: bold;
+    padding-top: 3em;
     margin-bottom: 20px;
+    
 
   }
   
@@ -53,9 +57,9 @@
 
   
   .container_1 {
-    margin-top: 3em;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 3em;
   } 
 
@@ -148,7 +152,7 @@ input[type=tel] {
 
 
 .container_2 {
-  margin: 3em 0;
+  margin-bottom: 3em;
 }
 
 .number {
@@ -198,10 +202,6 @@ input:focus::placeholder {
 
 @media (min-width:768px) {
 
-
-  legend {
-    width:100%;
-  }
 
   #name,
   #email,
