@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>My Portfolio</title>
+            <title>Form</title>
             <link href='https://fonts.googleapis.com/css?family=Merriweather&display=swap' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/style.css">
@@ -13,12 +13,12 @@
     <header class="headers" > 
       <h1 class="main_header">The code review</h1>
       <div class="head">
-            <h2>Signup for our newsletter</h2>
+            <h2 class="signup_header">Signup for our newsletter</h2>
             <p class="description_header">Get the lastest news on how your code is doing right in your inbox</p>
      </div>
     </header>
 
-    <div>
+    <div class="content">
         <form action="index.html" method="post">
         <fieldset>
 
@@ -35,19 +35,19 @@
             <input placeholder="Required " type="email" id="email" name="user_email">
 
             <label class="label" for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone">
+            <input placeholder="Optional " type="tel" id="phone" name="user_phone">
 
             <label class="label" for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <input placeholder="Optional " type="text" id="address" name="user_address">
 
             <label class="label" for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <input placeholder="Optional " type="text" id="city" name="user_city">
 
            
            
             <label class="label" for="state">State</label>
 
-                <select class="select_state" name="state" id="state">
+                <select class="select_state" name="user_state" id="state">
                             <option value="" selected="selected">Choose State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -104,8 +104,8 @@
 
             
 
-            <label class="label" for="zip">Zip Code</label>
-            <input class="zip-style" type="text" id="zip" name="user_zip" pattern="[0-9]*">  
+            <label class="label label_zip" for="zip">Zip Code</label>
+            <input placeholder="Optional " class="zip-style" type="text" id="zip" name="user_zip" pattern="[0-9]*">  
 
          </div>
 
@@ -140,14 +140,14 @@
 
             <label class="label_bottom">Newsletter Format</label><br>
 
-            <input type="radio" id="html_format" value="html_format" name="format">
+            <input type="radio" id="html_format" value="user_html_format" name="format">
             <label for="html_format">HTML Format</label><br>
 
-            <input type="radio" id="plain_text" value="plain_text" name="format">
+            <input type="radio" id="plain_text" value="user_plain_text" name="format">
             <label for="plain_text">Plain Text</label><br>
 
             <label class="label_bottom" for="other_topic">Other topic you whould like to hear about</label><br>
-            <textarea class="textarea_style" id="other_topic"></textarea>
+            <textarea class="textarea_style" id="other_topic" name="user_text"></textarea>
 
         </div>
             
